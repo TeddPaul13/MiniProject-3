@@ -5,7 +5,7 @@
 ### 2. Give a high level overview of your application and its features
 - Application allows users to Create, Read, Update, and Delete data from the database.
 ### 3. Where does the data come from (external API)?
-- Custom made API for the application..
+- External API
 ### 4. How is this data inserted into your database?
 - For test purposes the data is inserted through postman
 ### 5. How is the data structured (into tables or collections)?
