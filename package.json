@@ -1,0 +1,29 @@
+{
+  "name": "miniproject-3",
+  "version": "1.0.0",
+  "description": "- The design process entailed determining the type of data the will be accessed through the API and the tools to use. It was a success\r ### 2. Give a high level overview of your application and its features\r - Application allows users to Create, Read, Update, and Delete data from the database.\r ### 3. Where does the data come from (external API)?\r - External API\r ### 4. How is this data inserted into your database?\r - For test purposes the data is inserted through postman\r ### 5. How is the data structured (into tables or collections)?\r - The data is structured into tables.\r ### 6. How is the application code structured (MVC model)?\r - The application uses MVC structure- The Models have structure of the table, Controller have the code to perform operation, the routes have the code to link with server\r ### 7. Does your application cover all 4 CRUD operations? How?\r - Yes,  the user can Create, Read, Update, and Delete through the API\r ### 8. How might using a database instead of an external API directly benefit an application?\r - External API is limited to available data form the third party provider which mighty change and affect the application.\r - It easier to implement security measures when using database than external API.\r ### 9. How might you extend the features of your application in future?\r - Expand to include more tables and APIs to access them.",
+  "main": "dbConnect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeddPaul13/MiniProject-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeddPaul13/MiniProject-3/issues"
+  },
+  "homepage": "https://github.com/TeddPaul13/MiniProject-3#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.5.2",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.32.1"
+  }
+}
