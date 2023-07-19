@@ -2,10 +2,10 @@
 const Models = require("../models");
 const axios = require ('axios');
 
-const fetchAndPopulateData = async () => {
+const fetchAndPopulateData = async (req, res) => {
     try {
       const response = await axios.get("https://api.squiggle.com.au/?q=teams");
-      const data = response.data;
+      const data = response.data.teams;
       console.log(data)
   
       // Clear existing data from the table
@@ -44,7 +44,7 @@ const updateUserById = async (req, res) => {
     }
   
     //Update user
-    const data = await Models.User.update(req.body, {
+    const data = await Models.Team.update(req.body, {
       where: {
         id: id,
       },
@@ -68,7 +68,7 @@ const updateUserById = async (req, res) => {
     }
   
     //Update user
-    const data = await Models.Team.destroy( {
+    const data = await Models.Team.destroy({
       where: {
         id: id,
       },
