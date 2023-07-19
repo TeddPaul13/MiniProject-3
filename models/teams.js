@@ -18,7 +18,7 @@ team.init(
       required: true,
       unique: true,
     },
-    debut: { type: DataTypes.INTEGER, allowNull: false, required: true }, 
+    debut: { type: DataTypes.INTEGER, allowNull: false, required: true },
     retirement: { type: DataTypes.INTEGER, allowNull: false, required: true },
   },
   {
